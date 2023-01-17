@@ -14,7 +14,9 @@
     </head>
     <body>
     	<div style="width:200px; margin:50 auto;">
-    		<p id="myfocusablediv_first" tabindex="-1">List of elements</p>
+    		<div id="myfocusablediv_first" tabindex="-1">
+    			<p >List of elements</p>
+    		</div>
     		<p>
     			<button onclick="moveFocusOnTheFirstElement()">Focus first element</button>
     		</p>
@@ -27,7 +29,9 @@
     		<p>
     			<button onclick="moveFocusOnTheLastElement()">Focus last element</button>
     		</p>
-    		<p id="myfocusablediv_last" tabindex="0">Last element</p>
+    		<div id="myfocusablediv_last" tabindex="0">
+    			<p>Last element</p>
+    		</div>
     	</div>
     </body>
 </html>
