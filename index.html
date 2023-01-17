@@ -4,10 +4,11 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script type="text/javascript">
         	function moveFocusOnTheFirstElement() {
-        		byId("myfocusablediv_first").focus();
+        		document.querySelector('[tabindex="-1"]').focus()
         	}
         	function moveFocusOnTheLastElement() {
-        		byId("myfocusablediv_last").focus();
+        		document.querySelector('[id="myfocusablediv_last"]').focus()
+        		//#byId("myfocusablediv_last").focus();
         	}
         </script>
     </head>
@@ -26,7 +27,7 @@
     		<p>
     			<button onclick="moveFocusOnTheLastElement()">Focus last element</button>
     		</p>
-    		<p id="myfocusablediv_last" tabindex="-1">Last element</p>
+    		<p id="myfocusablediv_last" tabindex="0">Last element</p>
     	</div>
     </body>
 </html>
